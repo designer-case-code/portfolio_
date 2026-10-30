@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Концепты — портфолио дизайнера-продуктолога жилых комплексов</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  :root{
+    --dark:#1e1c1a; --accent:#c8321e; --bg:#f4f4f2; --text:#2b2a28; --muted:#7a766f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Inter','Segoe UI',Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
+
+  /* Навигация */
+  .topnav{background:#141210;padding:13px 0;}
+  .topnav .wrap{display:flex;align-items:center;font-size:14px;}
+  .topnav a{color:#d8d4cd;text-decoration:none;border-bottom:1px solid #555;}
+  .topnav a:hover{color:#fff;border-color:#fff;}
+  .topnav .cur{color:#fff;font-weight:600;}
+
+  /* Шапка — чёрная */
+  .hero{background:var(--dark);}
+  .hero-inner{padding:96px 0 56px;color:#fff;}
+  .hero h1{font-size:44px;line-height:1.15;font-weight:400;margin:0 0 14px;max-width:760px;}
+  .hero p{font-size:19px;opacity:.92;max-width:560px;}
+
+  /* Карточки кейсов */
+  .cases{display:grid;gap:44px;padding:72px 0;}
+  .case{display:block;text-decoration:none;color:inherit;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.12);transition:transform .18s ease, box-shadow .18s ease;}
+  .case:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.18);}
+  .case img{display:block;width:100%;height:380px;object-fit:cover;}
+  .case .meta{padding:26px 28px 30px;}
+  .case .meta .tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;}
+  .case .meta h2{font-size:26px;font-weight:600;margin:8px 0 8px;line-height:1.25;}
+  .case .meta p{font-size:15px;color:var(--muted);}
+
+  /* О себе */
+  .about-link{background:var(--bg);padding:64px 0;}
+  .about-link .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;}
+  .about-link b{display:block;font-size:22px;margin-bottom:6px;}
+  .about-link p{color:var(--muted);max-width:640px;}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px;white-space:nowrap;}
+  .btn:hover{background:#a92817;}
+
+  footer{background:#141210;color:#d8d4cd;padding:48px 0;}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;}
+  footer .brand{font-size:15px;font-weight:600;color:#fff;}
+  footer .contacts{font-size:15px;text-align:right;}
+  footer a{color:#d8d4cd;text-decoration:none;border-bottom:1px solid #555;}
+  footer a:hover{color:#fff;border-color:#fff;}
+
+  @media(max-width:760px){
+    .hero h1{font-size:30px;}
+    .case img{height:220px;}
+  }
+</style>
+</head>
+<body>
+<div style="background:#141210;padding:13px 0;"><div style="max-width:1100px;margin:0 auto;padding:0 24px;font-size:14px;"><a href="index.html" style="color:#d8d4cd;text-decoration:none;border-bottom:1px solid #555;">← Все кейсы</a><span style="color:#555;margin:0 14px;">&middot;</span><a href="about.html" style="color:#d8d4cd;text-decoration:none;border-bottom:1px solid #555;">Обо мне</a></div></div>
+
+<div class="hero">
+  <div class="wrap hero-inner">
+    <h1>Концепты</h1>
+    <p>Свободные исследования жилой среды: гипотезы продукта, которые ищут участок и заказчика</p>
+  </div>
+</div>
+
+<div class="cases">
+  <div class="wrap">
+    <a class="case" href="concept-forest.html">
+      <img src="images/aerial.jpg" alt="Аэровид жилого комплекса у лесопарка: ансамбль вокруг двора, лес на горизонте">
+      <div class="meta">
+        <div class="tag">Концепт-исследование</div>
+        <h2>Жилой комплекс у лесопарка</h2>
+        <p>Город внутри — природа вокруг: двор — сердце комплекса, бронзовый стилевой код и лес как постоянный фон жизни</p>
+      </div>
+    </a>
+
+    <div class="case" style="cursor:default;">
+      <div style="height:380px;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#f4f4f2,#f4f4f2 14px,#ececea 14px,#ececea 28px);color:#7a766f;font-size:15px;letter-spacing:.08em;">СЛЕДУЮЩИЙ КОНЦЕПТ — В РАБОТЕ</div>
+      <div class="meta">
+        <div class="tag" style="color:#7a766f;">Скоро</div>
+        <h2 style="color:#7a766f;">Следующее исследование</h2>
+        <p>Новая гипотеза жилой среды — добавляется по мере готовности</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="about-link">
+  <div class="wrap">
+    <div><b>Кто за этими проектами</b>
+    <p>Дизайнер интерьера с 2008 года, с 2023-го — продуктолог в девелопменте. О подходе, образовании и реализованных проектах — на странице «Обо мне».</p></div>
+    <a class="btn" href="about.html">Обо мне →</a>
+  </div>
+</div>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;width:100%;"><div>Портфолио дизайнера-продуктолога жилых комплексов</div><div><a href="tel:+79220201611">+7 922 020 16 11</a> &nbsp;&middot;&nbsp; <a href="mailto:MA-YA28@yandex.ru">MA-YA28@yandex.ru</a></div></div></footer>
+</body>
+</html>
